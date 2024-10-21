@@ -1,0 +1,1 @@
+# Calculadora_Tipo_Sanguineo
