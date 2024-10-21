@@ -123,8 +123,8 @@ void menu_duvidas() {
 
             printf("\n\nPor + ser um alelo dominante ele se sobressae sobre o alelo -.");
 
-            printf("\n\nUma pessoa Rh+ pode possuir duas combinações de alelos:");
-            printf("\n\nEla pode ser Homozigota, possuir dois alelos + (++), ou Heterozigota, um alelo + e um alelo - (+-).");
+            printf("\n\nUma pessoa Rh+ pode possuir duas combinacoes de alelos:");
+            printf("\nEla pode ser Homozigota, possuir dois alelos + (++), ou Heterozigota, um alelo + e um alelo - (+-).");
 
             printf("\n\nUma pessoa Rh - possui apenas uma combinacao de alelos:");
             printf("\nEla so pode ser Homozigota, dois alelos - (--).");
@@ -150,7 +150,7 @@ void menu_duvidas() {
             printf("| O | BO | OO |\n");
             printf("---------------\n");
 
-            printf("\nAtraves desse quadro obtemos as seguintes estimativas:");
+            printf("\nAtraves desse quadro obtemos as seguintes estimativas:\n");
             printf("\nFilho com sangue tipo A: 25%%");
             printf("\nFilho com sangue tipo B: 25%%");
             printf("\nFilho com sangue tipo AB: 25%%");
@@ -162,12 +162,37 @@ void menu_duvidas() {
         } else if (opc == 5) {
             system("cls");
             printf("O QUE EH A ERITOBLASTOSE FETAL?\n\n");
-            printf("A Eritoblastose Fetal, tambem chamada de  doença hemolítica do recém-nascido, eh uma condicao que ocorre quando");
+            printf("A Eritoblastose Fetal, tambem chamada de  doenca hemolitica do recem-nascido, eh uma condicao que ocorre quando");
             printf("\nha incompatibilidade entre o fator rh da mae e o fator rh do feto.");
+
+            printf("\n\nIsso ocorre quando a mae tem o fator rh- e o feto herda o fator rh+ do pai.");
+            printf("\nQuando isso acontece ha uma chance do sangue da mae, se possuir anticorpos anti-Rh, atravessar a placenta e \natacar as hemacias do feto, gerando anemia hemolitica.");
+            printf("\nRecomenda-se consultar um medico para saber as reais chances e tomar as medidas preventivas.");
+
+            printf("\n\nAPERTE QUALQUER TECLA PARA VOLTAR AO MENU DE DUVIDAS");
+            getch();
 
         } else if (opc == 6) {
             system("cls");
             printf("COMO FUNCIONA A DOACAO DE SANGUE?\n\n");
+            printf("Em uma doacao de sangue, a pessoa que ira receber o sangue nao recebe o sangue inteiro e sim alguns componentes especificos.");
+            printf("\nPara uma doacao de sangue ocorrer e nao gerar problemas graves tem que ser levado em consideracao alguns \nfatores de compatibilidade do sistema ABO e do fator rh.");
+            printf("\nDependendo do componente e da urgencia os fatores de compatibilidade podem ser flexiveis, mas como regra geral temos:\n");
+
+            printf("\nO sangue do tipo A tem anticorpos anti-B, que impedem de receber sangues do tipo B e do tipo AB.");
+            printf("\nO sangue do tipo B tem anticorpos anti-A, que impedem de receber sangues do tipo A e do tipo AB.");
+            printf("\nO sangue do tipo AB nao tem anicorpos o que o possibilita de receber sangues do tipo A, B, AB e O.");
+            printf("\nO sangue do tipo O tem anticorpos anti-A e anti-B, que impedem de receber sangues do tipo B, A e AB.");
+
+            printf("\n\nO sangue com fator rh+ nao possue anticorpos, entao pode receber sangue do tipo rh+ e do tipo rh-.");
+            printf("\nO sangue com fator rh- nao possuem anticorpos, mas pode desenvolve-los, entao eh uma medida de precaucao universal \nnao receber sangue do tipo rh+.");
+
+            printf("\n\nExemplo:");
+            printf("\nUma pessoa com sangue A- nao pode receber sangue B nem AB, e nao pode receber sangue com rh+.");
+            printf("\nEssa pessoa so pode receber sangue de A- e O-.");
+
+            printf("\n\nAPERTE QUALQUER TECLA PARA VOLTAR AO MENU DE DUVIDAS");
+            getch();
 
         } else {
             system("cls");
@@ -709,7 +734,7 @@ int main()
             //APRESENTAÇÃO DO MODULO
             printf("Bem-Vindo ao Modulo de Calculo do Tipo Sanguineo.\n");
             printf("\nNesse modulo veremos a interacao dos tipos sanguineos e dos fatores rh na hora da fecundacao de um feto.");
-            printf("\nCaso tenha duvidas digite a tecla H (help) para acessar o menu de explicacoes.\n\n");
+            printf("\nCaso tenha duvidas digite a tecla H (help) para acessar o menu de explicacoes.\n");
 
             flag_parents = 0;
             flag_tsr = 0;
@@ -739,7 +764,7 @@ int main()
             flag_parents = 1;
             flag_tsr = 0;
             //ENTRADA DO TIPO SANGUÍNEO DA MÃE
-            printf("\n\nDigite o tipo sanguineo da mae(A, B, AB ou O)....:");
+            printf("\nDigite o tipo sanguineo da mae(A, B, AB ou O)....:");
             verificar_tipo_sanguineo(ts_entrada, flag_parents);
             if (strcmp(ts_entrada, "O") != 0 && strcmp(ts_entrada, "AB") != 0) {
                 printf("Digite 'HO' para homozigoto ou 'HT' para heterozigoto, em relacao aos alelos do tipo sanguineo da mae....:");
