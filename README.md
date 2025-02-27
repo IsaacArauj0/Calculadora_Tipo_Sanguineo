@@ -1,10 +1,6 @@
 # Calculadora_Tipo_Sanguineo
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=c" />
-  </a>
-</p>
+[![My Skills](https://skillicons.dev/icons?i=c)](https://skillicons.dev)
 
 ## Descrição
 A ideia principal desse projeto é ele funcionar como uma calculadora de probabilidades do tipo sanguíneo de uma pessoa. O programa recebe o tipo sanguíneo de duas pessoas, faz o cálculo e retorna uma tabela com as probabilidades do tipo sanguíneo de um possível filho dessas pessoas. <br>
