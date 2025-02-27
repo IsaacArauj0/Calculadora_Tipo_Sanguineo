@@ -7,4 +7,4 @@ A ideia principal desse projeto é ele funcionar como uma calculadora de probabi
 Esse projeto foi criado usando a linguagem C. 
 
 ## Instrução de Uso
-Caso ocorra dúvidas sobre alguns termos técnicos, como heterozigoto e homozigoto, durante a execução o programa basta acessar o menu de explicações. Esse menu tem como objetivo suprir qualquer dúvida que se possa ter durante a o uso da aplicação.
+Caso ocorra dúvidas sobre alguns termos técnicos durante a execução do programa basta acessar o menu de explicações. Esse menu tem como objetivo suprir qualquer dúvida que se possa ter durante a o uso da aplicação.
