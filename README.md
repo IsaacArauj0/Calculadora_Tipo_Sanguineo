@@ -1,7 +1,7 @@
 # Calculadora_Tipo_Sanguineo
 
 ## Descrição
-A ideia principal desse projeto é ele funcionar como uma calculadora de probabilidades do tipo sanguíneo de uma pessoa. O programa recebe o tipo sanguíneo de duas pessoas, faz o cálculo e retorna uma tabela com as probabilidades do tipo sanguíneo de um possível filho dessas pessoas.
+A ideia principal desse projeto é ele funcionar como uma calculadora de probabilidades do tipo sanguíneo de uma pessoa. O programa recebe o tipo sanguíneo de duas pessoas, faz o cálculo e retorna uma tabela com as probabilidades do tipo sanguíneo de um possível filho dessas pessoas. \n
 Esse projeto foi criado usando a linguagem C. 
 
 ## Instrução de Uso
